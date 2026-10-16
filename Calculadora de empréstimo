@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    //Declaração de variavel 
+    float salario, prestacao;
+    
+    // Entrada do salario 
+    printf("Informe o seu salario: ");
+    scanf("%f",&salario);
+    printf("Informe o valor da parcela: ");
+    scanf("%f",&prestacao);
+    
+    //Processamento
+    float limiteParcela = salario * 0.20;
+    if (prestacao>limiteParcela)
+       printf("Emprestimo não autorizado!!!");
+       else printf("Emprestimo autorizado!!!");
+    return 0;
+}
